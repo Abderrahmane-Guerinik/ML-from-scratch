@@ -35,8 +35,8 @@ class SimpleLinearRegression:
                     print(
                         f"Early stopping at epoch: {epoch} final w: {self.w} final b: {self.b}.")
                     break
-                else:
-                    count = 0
+            else:
+                count = 0
         return None
 
     def predict(self, x):
