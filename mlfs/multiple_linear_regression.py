@@ -19,9 +19,9 @@ class MultipleLinearRegression:
         # apply gradient descent as an optimizer to train the model
         loss = float("inf")
         count = 0
+        m = len(X)
         for epoch in range(epochs):
-            # simultanous update of the parameters w and b
-            m = len(X)
+            # simultanous update of the parameters w and b 
             tmp_w = self.w - alpha * 1/m * X.T @ (X @ self.w + self.b - y)
             tmp_b = self.b - alpha * 1/m * np.sum((X @ self.w + self.b - y))
             self.w = tmp_w
