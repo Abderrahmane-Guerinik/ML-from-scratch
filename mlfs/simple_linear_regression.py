@@ -39,6 +39,6 @@ class SimpleLinearRegression:
                 count = 0
         return None
 
-    def predict(self, x):
-        y_hat = self.w * x + self.b
+    def predict(self, X):
+        y_hat = self.w * X + self.b
         return y_hat
